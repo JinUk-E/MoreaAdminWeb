@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>자기소개</title>
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+    header { border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 20px; }
+    h1 { margin: 0; color: #2c3e50; }
+    .section { margin-bottom: 30px; }
+    .skill-tag { background: #eee; padding: 5px 10px; border-radius: 4px; font-size: 0.9em; margin-right: 5px; }
+    .back-btn { display: inline-block; margin-top: 20px; color: #666; text-decoration: none; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>안녕하세요, <span th:text="${name}">이름</span>입니다.</h1>
+  <p>백엔드 개발자를 꿈꾸는 개발자입니다.</p>
+</header>
+
+<div class="section">
+  <h2>🚀 기술 스택</h2>
+  <span class="skill-tag">Java</span>
+  <span class="skill-tag">Spring Boot</span>
+  <span class="skill-tag">MySQL</span>
+  <span class="skill-tag">Unity(C#)</span>
+</div>
+
+<div class="section">
+  <h2>📝 간단 소개</h2>
+  <p>
+    게임 클라이언트 개발 경험을 바탕으로, 안정적인 서버 아키텍처를 설계하는 것에 관심이 많습니다.<br>
+    현재 Spring Boot와 JPA를 학습하며 나만의 포트폴리오를 만들고 있습니다.
+  </p>
+</div>
+
+<div class="section">
+  <h2>📧 연락처</h2>
+  <p>Email: jjw6822@naver.com</p>
+  <p>GitHub: <a href="https://github.com/JinUk-E" target="_blank">https://github.com/JinUk-E</a></p>
+</div>
+
+<a href="/" class="back-btn">← 메인으로 돌아가기</a>
+</body>
+</html>
